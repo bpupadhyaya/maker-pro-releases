@@ -24,7 +24,7 @@ Grab your platform from **[the latest release](../../releases/latest)**:
 
 **macOS** — signed & notarized by Apple ✓
 1. Unzip the download (double-click).
-2. Double-click `maker-pro`. If macOS asks to confirm the first open, click **Open**.
+2. Double-click **Maker Pro.app**. (It's a background app — no window; it opens your browser.)
 3. Your browser opens the workshop at `http://127.0.0.1:4321`.
 
 **Windows**
