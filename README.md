@@ -22,16 +22,10 @@ Grab your platform from **[the latest release](../../releases/latest)**:
 | Windows 10/11 (x64) | `maker-pro-windows-x64.zip` |
 | Linux (x64) | `maker-pro-linux-x64.zip` |
 
-**macOS**
+**macOS** — signed & notarized by Apple ✓
 1. Unzip the download (double-click).
-2. Early builds aren't yet notarized by Apple, so macOS may say the app is *"damaged"* — it isn't;
-   that's the quarantine flag on unsigned downloads. Clear it once in Terminal:
-   ```sh
-   xattr -dr com.apple.quarantine ~/Downloads/maker-pro-macos-arm64
-   ```
-   (adjust the path to wherever you unzipped)
-3. Run it: double-click `maker-pro`, or `./maker-pro` in Terminal. Your browser opens the
-   workshop at `http://127.0.0.1:4321`.
+2. Double-click `maker-pro`. If macOS asks to confirm the first open, click **Open**.
+3. Your browser opens the workshop at `http://127.0.0.1:4321`.
 
 **Windows**
 1. Unzip, double-click `maker-pro.exe`.
