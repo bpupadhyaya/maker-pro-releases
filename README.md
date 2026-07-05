@@ -67,3 +67,34 @@ Qwen2.5-Coder 3B (~2 GB) is a fast start. One-time download; after that everythi
 
 Reply to your receipt email, or open an issue here. — © EqualInformation, LLC. Binaries only;
 Maker Pro's source is proprietary. The bundled Maker core is MIT.
+
+---
+
+## Is it safe? (yes — here's how to verify)
+
+**Downloading outside the App Store doesn't mean skipping Apple's malware check.**
+
+- **Apple scanned it for malware.** The macOS builds are **notarized** — Apple's automated
+  malware/virus scan ran on the exact file you download and issued a cryptographic pass. This is
+  the *same* security scan the Mac App Store performs. macOS confirms it silently when you open the
+  app (that's why there's no "unidentified developer" warning).
+- **The publisher is verified by Apple** as **EqualInformation, LLC** (Apple Developer Team
+  `XDC8C9HH9K`). You can check it yourself — right-click the app → *Get Info*, or in Terminal:
+  ```sh
+  codesign -dv --verbose=2 "/Applications/Maker Pro.app"    # → Authority: Developer ID Application: Bhim Upadhyaya
+  spctl --assess -vv "/Applications/Maker Pro.app"          # → accepted, source=Notarized Developer ID
+  ```
+- **Verify the download wasn't tampered with.** Every release lists **SHA-256 checksums**
+  (`SHA256SUMS.txt`). Compare after downloading:
+  ```sh
+  shasum -a 256 Maker-Pro-macos-arm64.dmg    # must match SHA256SUMS.txt
+  ```
+- **Open source you can read.** Maker Pro is built on the **MIT-licensed
+  [Maker](https://github.com/bpupadhyaya/maker)** core — the engine that runs on your machine is
+  public and auditable.
+- **It stays on your machine.** Maker is local-first: your prompts, files, and work never leave
+  your device (the Pro features that do use a server — Publish/Sync — are opt-in and clearly labeled).
+
+*Windows/Linux builds are notarized by neither OS (there's no equivalent free scan); verify them
+with the SHA-256 checksums and, if you like, [VirusTotal](https://www.virustotal.com). A signed
+Windows build (Authenticode) is on the roadmap.*
