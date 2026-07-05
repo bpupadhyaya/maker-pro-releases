@@ -17,15 +17,16 @@ Grab your platform from **[the latest release](../../releases/latest)**:
 
 | Platform | File |
 |---|---|
-| macOS (Apple Silicon — M1 and newer) | `maker-pro-macos-arm64.zip` |
-| macOS (Intel) | `maker-pro-macos-x64.zip` |
+| macOS (Apple Silicon — M1 and newer) | `Maker-Pro-macos-arm64.dmg` |
+| macOS (Intel) | `Maker-Pro-macos-x64.dmg` |
 | Windows 10/11 (x64) | `maker-pro-windows-x64.zip` |
 | Linux (x64) | `maker-pro-linux-x64.zip` |
 
-**macOS** — signed & notarized by Apple ✓
-1. Unzip the download (double-click).
-2. Double-click **Maker Pro.app**. (It's a background app — no window; it opens your browser.)
-3. Your browser opens the workshop at `http://127.0.0.1:4321`.
+**macOS** — native app, signed & notarized by Apple ✓
+1. Open the downloaded **.dmg**.
+2. Drag **Maker Pro** into your **Applications** folder.
+3. Launch it from Applications (or Launchpad/Spotlight) — a real app window opens
+   with the workshop. Quit any time with ⌘Q.
 
 **Windows**
 1. Unzip, double-click `maker-pro.exe`.
