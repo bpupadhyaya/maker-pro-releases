@@ -95,6 +95,15 @@ Maker Pro's source is proprietary. The bundled Maker core is MIT.
 - **It stays on your machine.** Maker is local-first: your prompts, files, and work never leave
   your device (the Pro features that do use a server — Publish/Sync — are opt-in and clearly labeled).
 
-*Windows/Linux builds are notarized by neither OS (there's no equivalent free scan); verify them
-with the SHA-256 checksums and, if you like, [VirusTotal](https://www.virustotal.com). A signed
-Windows build (Authenticode) is on the roadmap.*
+- **Independently scanned clean.** Every build passed **VirusTotal** with **0 of 60+ antivirus
+  engines** flagging anything — including the Windows/Linux binaries:
+
+  | File | VirusTotal |
+  |---|---|
+  | `Maker-Pro-macos-arm64.dmg` | [0 / 60 engines](https://www.virustotal.com/gui/file/95b8a6d07abed9bca7d4872aaeffbca831f6fe45c0b74c900c43182f3b832c10) |
+  | `Maker-Pro-macos-x64.dmg` | [0 / 60 engines](https://www.virustotal.com/gui/file/93d76583aae91beda25c5468bc50a5089719f53829df211ca2dfb2223878fb97) |
+  | `maker-pro-windows-x64.zip` | [0 / 63 engines](https://www.virustotal.com/gui/file/6f8630f89d7c5dfc4ee47081d1dbc64d03066ceb72eb7e5aa865c8bc9e3f8b5f) |
+  | `maker-pro-linux-x64.zip` | [0 / 65 engines](https://www.virustotal.com/gui/file/7562525d8ee385515558ea3f02e542d6f1b1c9f4eca5f32ca72b347f0791c8c0) |
+
+*A signed Windows build (Authenticode) is on the roadmap; until then, Windows/Linux downloads carry
+no OS-level scan, so the VirusTotal reports + SHA-256 checksums above are your verification.*
